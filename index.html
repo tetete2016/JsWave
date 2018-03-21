@@ -8,23 +8,32 @@
     <body>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <div class="jumbotron text-center">
-        <h1>GPU Accelerated Wave Simulation</h1>
+        <h1>Wave Simulation on HTML</h1>
         <p>Click the link below and enjoy the simulation!!</p> 
         </div>
 
         <div class="container">
+            <h2>Simulation using turbo.js</h2>
             <div class="row">
-                <div class="col-sm-4">
-                    <h3>Point Source Simulation on GPU</h3>
+                <div class="col-sm-6">
+                    <h4>Benchmarking</h4>
+                    <p>Comparison between float32Array and normal array.
+                    The simulation is running on the CPU.
+                    Time spent for the initialization of the arrays is excluded.</p>
+                    <a href="test_benchmark.html" class="btn btn-info" role="button">Open the simulation</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Simulation using GPU.js</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Point Source Simulation on GPU</h4>
                     <a href="test.html" class="btn btn-info" role="button">Open the simulation</a>
                 </div>
-                <div class="col-sm-4">
-                    <h3>Point Source Simulation on CPU</h3>
+                <div class="col-sm-6">
+                    <h4>Point Source Simulation on CPU</h4>
                     <a href="test_cpu.html" class="btn btn-info" role="button">Open the simulation</a>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Parabolic Reflector</h3> 
-                    <p>coming soon</p>
                 </div>
             </div>
         </div>
